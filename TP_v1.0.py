@@ -5,6 +5,7 @@ prenom_adherents=[]
 annee_naissance=[]
 categorie=["Poussin","Cadet","Junior","Semi-Pro","Pro"]
 categorie_adherents=[]
+adherents=[]
 
 nom_adherents.append(input("Nom de l'adhérent ?\n"))
 prenom_adherents.append(input("prenom de l'adherent?\n"))
@@ -34,7 +35,12 @@ else:
     prenom_adherents.pop(0)
     print("L'adhérent n'a pas l'âge requis pour intégrer le club de quidditch !")
 
-print(nom_adherents, prenom_adherents, categorie_adherents)
+
+adherents.append((nom_adherents[0],prenom_adherents[0],categorie_adherents[0]))
+nom_adherents.pop(0)
+prenom_adherents.pop(0)
+categorie_adherents.pop(0)
+print(nom_adherents, prenom_adherents, categorie_adherents, adherents)
 
 
 
