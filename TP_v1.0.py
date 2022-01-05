@@ -16,19 +16,19 @@ age_adherent=2022-anneenaissance
 
 if age_adherent >6 and age_adherent <12:
     print("l'adhérent est dans la catégorie Poussin")
-    categorie_adherents.append(Poussin)
+    categorie_adherents.append("Poussin")
 elif age_adherent >12 and age_adherent <18:
     print("l'adhérent est dans la catégorie Cadet")
-    categorie_adherents.append(Cadet)
+    categorie_adherents.append("Cadet")
 elif age_adherent >18 and age_adherent <24:
     print("l'adhérent est dans la catégorie Junior")
-    categorie_adherents.append(Junior)
+    categorie_adherents.append("Junior")
 elif age_adherent >24 and age_adherent <30:
     print("l'adhérent est dans la catégorie Semi-Pro")
-    categorie_adherents.append(Semi-Pro)
+    categorie_adherents.append("Semi-Pro")
 elif age_adherent >30 and age_adherent <40:
     print("l'adhérent est dans la catégorie Pro")
-    categorie_adherents.append(Pro)
+    categorie_adherents.append("Pro")
 else:
     nom_adherents.pop(0)
     prenom_adherents.pop(0)
