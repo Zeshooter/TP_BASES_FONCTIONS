@@ -35,11 +35,14 @@ else:
     prenom_adherents.pop(0)
     print("L'adhérent n'a pas l'âge requis pour intégrer le club de quidditch !")
 
+if categorie_adherents==True:
+    adherents.append((nom_adherents[0],prenom_adherents[0],categorie_adherents[0]))
+    nom_adherents.pop(0)
+    prenom_adherents.pop(0)
+    categorie_adherents.pop(0)
+else:
+    print("Cette personne ne peut pas adhérer au club de Quidditch car ici on discrimine les jeunes et les vieux !!!")
 
-adherents.append((nom_adherents[0],prenom_adherents[0],categorie_adherents[0]))
-nom_adherents.pop(0)
-prenom_adherents.pop(0)
-categorie_adherents.pop(0)
 print(nom_adherents, prenom_adherents, categorie_adherents, adherents)
 
 
