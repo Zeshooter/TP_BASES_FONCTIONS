@@ -1,8 +1,10 @@
+# import des fonctions de calculs
+import fonctions
+
 # Saisie des données dans une liste
 
 nom_adherents=[]
 prenom_adherents=[]
-annee_naissance=[]
 categorie=["Poussin","Cadet","Junior","Semi-Pro","Pro"]
 categorie_adherents=[]
 adherents=[]
@@ -13,7 +15,7 @@ prenom_adherents.append(input("prenom de l'adherent?\n"))
 # Vérification de l'admission de l'adhérent
 
 anneenaissance=int(input("Veuillez Indiquer l'année de naissance de l'adhérent ?\n"))
-age_adherent=2022-anneenaissance
+age_adherent=fonctions.age_adherent(anneenaissance)
 
 if age_adherent >6 and age_adherent <12:
     print("l'adhérent est dans la catégorie Poussin")
