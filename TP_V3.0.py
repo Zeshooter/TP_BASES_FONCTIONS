@@ -55,13 +55,13 @@ for i in range(nbre_adherent):
 
     # Enregistrement de l'adhérent dans une liste + création de l'email
 
-if nom_adherents:
-    adherents.append((nom_adherents[0],prenom_adherents[0],categorie_adherents[0],(prenom_adherents[0][0])+"."+(nom_adherents[0])+"@baton-rouge.fr"))
-    nom_adherents.pop(0)
-    prenom_adherents.pop(0)
-    categorie_adherents.pop(0)
-else:
-    print("Cette personne ne peut pas adhérer au club de Quidditch car ici on discrimine les jeunes et les vieux !!!")
+    if nom_adherents:
+        adherents.append((nom_adherents[0],prenom_adherents[0],categorie_adherents[0],(prenom_adherents[0][0])+"."+(nom_adherents[0])+"@baton-rouge.fr"))
+        nom_adherents.pop(0)
+        prenom_adherents.pop(0)
+        categorie_adherents.pop(0)
+    else:
+        print("Cette personne ne peut pas adhérer au club de Quidditch car ici on discrimine les jeunes et les vieux !!!")
 
 
 
