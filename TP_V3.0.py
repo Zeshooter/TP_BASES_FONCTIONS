@@ -11,16 +11,9 @@ prenom_adherents=[]
 categorie=["Poussin","Cadet","Junior","Semi-Pro","Pro"]
 categorie_adherents=[]
 adherents=[]
+continuer=True
 
-saisie=False
-while saisie==False:
-    try:
-        nbre_adherent=int(input("Combien d'adhérent voulez vous saisir ?\n"))
-        saisie=True
-    except ValueError:
-        print("Vous devez entrer un nombre entier ?")
-
-for i in range(nbre_adherent):
+while continuer:
     nom_adherents.append(input("Nom de l'adhérent ?\n"))
     prenom_adherents.append(input("prenom de l'adherent?\n"))
 
@@ -66,8 +59,10 @@ for i in range(nbre_adherent):
     else:
         print("Cette personne ne peut pas adhérer au club de Quidditch car ici on discrimine les jeunes et les vieux !!!")
 
-
-
+    saisie_adherent=input("Voulez vous saisir un autre adhérent y/n ?\n")
+    if saisie_adherent=="n":
+        continuer=False
+        print ("La saisie est términée pour aujourd'hui, merci !")
 print(nom_adherents, prenom_adherents, categorie_adherents, adherents)
 
 
