@@ -63,7 +63,12 @@ while continuer:
     if saisie_adherent=="n":
         continuer=False
         print ("La saisie est términée pour aujourd'hui, merci !")
-print(nom_adherents, prenom_adherents, categorie_adherents, adherents)
 
+print(nom_adherents, prenom_adherents, categorie_adherents, adherents)
+today=datetime.datetime.now().strftime("%d-%m-%y")
+with open("inscrits"+today+".csv", "w") as fichier_csv:
+    writer=csv.writer(fichier_csv)
+    for row in adherents:
+        writer.writerow(row)
 
 
