@@ -1,5 +1,8 @@
-# import des fonctions de calculs
+# import des fonctions de calculs, de la bibliothèque csv et date
 import fonctions
+import csv
+import datetime
+
 
 # Saisie des données dans une liste
 
