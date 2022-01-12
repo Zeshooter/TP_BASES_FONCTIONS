@@ -14,7 +14,7 @@ for i in repertoire:
                 print (adherent)
 
 with open("C:/Users/Ulrich 2/Documents/Adrar/TP_BASES_FONCTIONS/TP_BASES_FONCTIONS/adherents/adherents.csv", "a") as fichier_csv:
-    writer=csv.writer(fichier_csv)
+    writer=csv.writer(fichier_csv, delimiter=";", lineterminator="\n")
     for row in adherent:
         writer.writerow(row)
 

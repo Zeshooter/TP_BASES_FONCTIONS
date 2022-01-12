@@ -1,12 +1,8 @@
-test,fionds,Pro,f.test@baton-rouge.fr
-
-franck,franckie,Cadet,f.franck@baton-rouge.fr
-
-cassoulet,de toulouse,Junior,d.cassoulet@baton-rouge.fr
-
-le pauvre,developpeur,Semi-Pro,d.le pauvre@baton-rouge.fr
-
-encore,un,Junior,u.encore@baton-rouge.fr
-
-ony,cropis,Junior,c.ony@baton-rouge.fr
-
+test;fionds;Pro;f.test@baton-rouge.fr
+
+"retest;une nouvelle fois;Pro;u.retest@baton-rouge.fr"
+"pourquoi;pas;Junior;p.pourquoi@baton-rouge.fr"
+"pour la science;je vais essayer;Pro;j.pour la science@baton-rouge.fr"
+"encore;un;Cadet;u.encore@baton-rouge.fr"
+"soul;man;Junior;m.soul@baton-rouge.fr"
+"voudrez tu;sortir;Semi-Pro;s.voudrez tu@baton-rouge.fr"
