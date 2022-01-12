@@ -68,8 +68,8 @@ while continuer:
 print(nom_adherents, prenom_adherents, categorie_adherents, adherents)
 today=datetime.datetime.now().strftime("%d-%m-%y")
 
-with open("C:/Users/Ulrich 2/Documents/Adrar/TP_BASES_FONCTIONS/TP_BASES_FONCTIONS/adherents/"+"inscrits"+today+".csv", "w") as fichier_csv:
-    writer=csv.writer(fichier_csv)
+with open("C:/Users/Ulrich 2/Documents/Adrar/TP_BASES_FONCTIONS/TP_BASES_FONCTIONS/"+"inscrits"+today+".csv", "w") as fichier_csv:
+    writer=csv.writer(fichier_csv, delimiter=";", lineterminator="\n")
     for row in adherents:
         writer.writerow(row)
 
