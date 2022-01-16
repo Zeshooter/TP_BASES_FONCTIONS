@@ -2,10 +2,13 @@ import csv
 import os
 
 adherent=[]
-# os.mkdir("adherents")
+# creation du repertoire
+dir=os.listdir()
+if "adherents" not in dir:
+    os.mkdir("adherents")
 
 # recherche des fichier csv
-repertoire=os.listdir("C:/Users/Ulrich 2/Documents/Adrar/TP_BASES_FONCTIONS/TP_BASES_FONCTIONS/")
+repertoire=os.listdir()
 
 # lecture des tuples dans les fichiers csv et stockage dans la liste adherent
 for i in repertoire:
@@ -26,17 +29,9 @@ print (new_list)
 
 
 # ecriture des tuples dans un fichier
-with open("C:/Users/Ulrich 2/Documents/Adrar/TP_BASES_FONCTIONS/TP_BASES_FONCTIONS/adherents/inscrits_total.csv", "w") as fichier_csv:
+with open("adherents/inscrits_total.csv", "w") as fichier_csv:
     writer=csv.writer(fichier_csv, delimiter=";", lineterminator="\n")
     for row in new_list:
         writer.writerow(row)
 print("Un nouveau fichier a été crée avec tous les adhérents")
-
-
-# old_list=[]
-# with open ("C:/Users/Ulrich 2/Documents/Adrar/TP_BASES_FONCTIONS/TP_BASES_FONCTIONS/adherents/inscrits_total.csv", "r") as fichier_csv:
-#     reader=csv.reader(fichier_csv, delimiter=";", lineterminator="\n")
-#     for ligne in fichier_csv:
-#         old_list.append(ligne)
-# print(old_list)
 
