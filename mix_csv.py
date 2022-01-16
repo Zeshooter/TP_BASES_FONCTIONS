@@ -26,9 +26,9 @@ print (new_list)
 
 
 # ecriture des tuples dans un fichier
-with open("C:/Users/Ulrich 2/Documents/Adrar/TP_BASES_FONCTIONS/TP_BASES_FONCTIONS/adherents/inscrits_total.csv", "a") as fichier_csv:
+with open("C:/Users/Ulrich 2/Documents/Adrar/TP_BASES_FONCTIONS/TP_BASES_FONCTIONS/adherents/inscrits_total.csv", "w") as fichier_csv:
     writer=csv.writer(fichier_csv, delimiter=";", lineterminator="\n")
-    for row in adherent:
+    for row in new_list:
         writer.writerow(row)
 print("Un nouveau fichier a été crée avec tous les adhérents")
 
